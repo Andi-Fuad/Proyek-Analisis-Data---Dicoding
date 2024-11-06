@@ -68,7 +68,7 @@ max_date = all_df["order_approved_at"].max()
 with st.sidebar:
     st.header('A. Fuad Ahsan Basir')
     # Menambahkan logo perusahaan
-    st.image("logo.png")
+    st.image("./dashboard/logo.png")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
@@ -241,7 +241,7 @@ st.pyplot(fig)
 st.subheader("Customer Distribution Heatmap")
 
 # Membaca file HTML dari disk
-with open("customer_density_heatmap.html", "r") as file:
+with open("./dashboard/customer_density_heatmap.html", "r") as file:
     html_content = file.read()
 
 # Menampilkan HTML di Streamlit
@@ -251,7 +251,7 @@ st.components.v1.html(html_content, width=700, height=500)
 st.subheader("Seller Distribution Heatmap")
 
 # Membaca file HTML dari disk
-with open("seller_density_heatmap.html", "r") as file:
+with open("./dashboard/seller_density_heatmap.html", "r") as file:
     html_content = file.read()
 
 # Menampilkan HTML di Streamlit
