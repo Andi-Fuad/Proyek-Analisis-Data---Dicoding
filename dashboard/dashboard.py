@@ -51,7 +51,7 @@ st.header('Brazil E-Commerce Dashboard')
 
 #-------------------SIDEBAR------------------------
 
-all_df = pd.read_csv('all_data.csv')
+all_df = pd.read_csv('./dashboard/all_data.csv')
 datetime_columns = ['order_purchase_timestamp', 
                     'order_approved_at',
                     'order_delivered_customer_date'
