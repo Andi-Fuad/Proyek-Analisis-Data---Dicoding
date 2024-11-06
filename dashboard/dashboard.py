@@ -237,22 +237,22 @@ ax[2].tick_params(axis ='x', labelsize=15, rotation=45)
 
 st.pyplot(fig)
 
-#-------------------Customer Distribution Map------------------------
-st.subheader("Customer Distribution Heatmap")
+# #-------------------Customer Distribution Map------------------------
+# st.subheader("Customer Distribution Heatmap")
 
-# Membaca file HTML dari disk
-with open("customer_density_heatmap.html", "r") as file:
-    html_content = file.read()
+# # Membaca file HTML dari disk
+# with open("customer_density_heatmap.html", "r") as file:
+#     html_content = file.read()
 
-# Menampilkan HTML di Streamlit
-st.components.v1.html(html_content, width=700, height=500)
+# # Menampilkan HTML di Streamlit
+# st.components.v1.html(html_content, width=700, height=500)
 
-#-------------------Seller Distribution Map------------------------
-st.subheader("Seller Distribution Heatmap")
+# #-------------------Seller Distribution Map------------------------
+# st.subheader("Seller Distribution Heatmap")
 
-# Membaca file HTML dari disk
-with open("seller_density_heatmap.html", "r") as file:
-    html_content = file.read()
+# # Membaca file HTML dari disk
+# with open("seller_density_heatmap.html", "r") as file:
+#     html_content = file.read()
 
-# Menampilkan HTML di Streamlit
-st.components.v1.html(html_content, width=700, height=500)
+# # Menampilkan HTML di Streamlit
+# st.components.v1.html(html_content, width=700, height=500)
