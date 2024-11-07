@@ -70,8 +70,8 @@ with st.sidebar:
     # Menambahkan logo perusahaan
     st.image("logo.png")
     st.write("Date Filter")
-    start_date = st.date_input("Start Date", min_value=min_date, max_value=max_date, value=None)
-    end_date = st.date_input("End Date", min_value=min_date, max_value=max_date, value=None)
+    start_date = st.date_input("Start Date", min_value=min_date, max_value=max_date, value=min_date)
+    end_date = st.date_input("End Date", min_value=min_date, max_value=max_date, value=max_date)
     
     try:
         if start_date and end_date:
